@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				15B35D936D679562EE679795 /* Pods-keepYourFaceGreat.debug.xcconfig */,
 				9868A821FB69E2585967E5E7 /* Pods-keepYourFaceGreat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +57,27 @@
 				66F230FF9675720510643657 /* Pods_keepYourFaceGreat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB72E3262581DB1A00658939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB72E3272581DB2000658939 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB72E3282581DB2A00658939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EB73EE5F257D02B400DC86AE = {
@@ -81,6 +101,9 @@
 		EB73EE6A257D02B400DC86AE /* keepYourFaceGreat */ = {
 			isa = PBXGroup;
 			children = (
+				EB72E3282581DB2A00658939 /* Model */,
+				EB72E3272581DB2000658939 /* Controller */,
+				EB72E3262581DB1A00658939 /* View */,
 				EB73EE6B257D02B400DC86AE /* AppDelegate.swift */,
 				EB73EE6D257D02B400DC86AE /* SceneDelegate.swift */,
 				EB73EE6F257D02B400DC86AE /* ViewController.swift */,
