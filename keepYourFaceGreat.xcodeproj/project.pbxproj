@@ -62,6 +62,9 @@
 		EB72E3262581DB1A00658939 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB73EE71257D02B400DC86AE /* Main.storyboard */,
+				EB73EE74257D02B500DC86AE /* Assets.xcassets */,
+				EB73EE76257D02B500DC86AE /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -69,6 +72,9 @@
 		EB72E3272581DB2000658939 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB73EE6B257D02B400DC86AE /* AppDelegate.swift */,
+				EB73EE6D257D02B400DC86AE /* SceneDelegate.swift */,
+				EB73EE6F257D02B400DC86AE /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,12 +110,6 @@
 				EB72E3282581DB2A00658939 /* Model */,
 				EB72E3272581DB2000658939 /* Controller */,
 				EB72E3262581DB1A00658939 /* View */,
-				EB73EE6B257D02B400DC86AE /* AppDelegate.swift */,
-				EB73EE6D257D02B400DC86AE /* SceneDelegate.swift */,
-				EB73EE6F257D02B400DC86AE /* ViewController.swift */,
-				EB73EE71257D02B400DC86AE /* Main.storyboard */,
-				EB73EE74257D02B500DC86AE /* Assets.xcassets */,
-				EB73EE76257D02B500DC86AE /* LaunchScreen.storyboard */,
 				EB73EE79257D02B500DC86AE /* Info.plist */,
 			);
 			path = keepYourFaceGreat;
