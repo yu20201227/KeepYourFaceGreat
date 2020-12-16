@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         animationView.loopMode = .loop
         animationView.play()
         view.addSubview(animationView)
-        
     }
 
 
