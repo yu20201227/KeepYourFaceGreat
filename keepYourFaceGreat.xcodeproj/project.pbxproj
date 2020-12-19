@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C86101D00F64EF3C137538B6 /* Pods_keepYourFaceGreat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F230FF9675720510643657 /* Pods_keepYourFaceGreat.framework */; };
+		EB4044F7258E46BB0069EBDD /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4044F6258E46BB0069EBDD /* AnimationViewController.swift */; };
 		EB73EE6C257D02B400DC86AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73EE6B257D02B400DC86AE /* AppDelegate.swift */; };
 		EB73EE6E257D02B400DC86AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73EE6D257D02B400DC86AE /* SceneDelegate.swift */; };
 		EB73EE70257D02B400DC86AE /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73EE6F257D02B400DC86AE /* OpeningViewController.swift */; };
@@ -20,6 +21,7 @@
 		15B35D936D679562EE679795 /* Pods-keepYourFaceGreat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keepYourFaceGreat.debug.xcconfig"; path = "Target Support Files/Pods-keepYourFaceGreat/Pods-keepYourFaceGreat.debug.xcconfig"; sourceTree = "<group>"; };
 		66F230FF9675720510643657 /* Pods_keepYourFaceGreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keepYourFaceGreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868A821FB69E2585967E5E7 /* Pods-keepYourFaceGreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keepYourFaceGreat.release.xcconfig"; path = "Target Support Files/Pods-keepYourFaceGreat/Pods-keepYourFaceGreat.release.xcconfig"; sourceTree = "<group>"; };
+		EB4044F6258E46BB0069EBDD /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		EB73EE68257D02B400DC86AE /* keepYourFaceGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keepYourFaceGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB73EE6B257D02B400DC86AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB73EE6D257D02B400DC86AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EB73EE74257D02B500DC86AE /* Assets.xcassets */,
 				EB73EE76257D02B500DC86AE /* LaunchScreen.storyboard */,
 				EB73EE79257D02B500DC86AE /* Info.plist */,
+				EB4044F6258E46BB0069EBDD /* AnimationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				EB73EE70257D02B400DC86AE /* OpeningViewController.swift in Sources */,
 				EB73EE6C257D02B400DC86AE /* AppDelegate.swift in Sources */,
 				EB73EE6E257D02B400DC86AE /* SceneDelegate.swift in Sources */,
+				EB4044F7258E46BB0069EBDD /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
