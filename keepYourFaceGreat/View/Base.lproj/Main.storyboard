@@ -20,6 +20,9 @@
                                 <rect key="frame" x="44" y="563" width="286" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZy-vA-IFt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,12 +60,17 @@
                                 <rect key="frame" x="16" y="519" width="343" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新規登録"/>
+                                <connections>
+                                    <action selector="registerButton:" destination="leD-fI-vmY" eventType="touchUpInside" id="d1Z-WC-uSt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VlY-JR-iW5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="ncf-Bh-B9W" id="4IJ-zz-ezV"/>
+                        <outlet property="passTextField" destination="Z0a-E8-SaH" id="gLH-uE-CtO"/>
                         <segue destination="rRf-b8-ziW" kind="presentation" id="MFZ-Ot-XH2"/>
                     </connections>
                 </viewController>
@@ -86,22 +94,32 @@
                                 <rect key="frame" x="91" y="391" width="180" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="toNightButton:" destination="rRf-b8-ziW" eventType="touchUpInside" id="pi2-Zj-hlU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-An-HMk">
                                 <rect key="frame" x="16" y="537" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ライブラリ"/>
+                                <connections>
+                                    <action selector="toLibraryButton:" destination="rRf-b8-ziW" eventType="touchUpInside" id="4Jb-Rb-Lj3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-Oa-NOW">
                                 <rect key="frame" x="252" y="537" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="カメラ"/>
+                                <connections>
+                                    <action selector="toCameraButton:" destination="rRf-b8-ziW" eventType="touchUpInside" id="SvG-eQ-oTI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G5f-Wt-23m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="morningFaceImageView" destination="Qsi-hp-PqF" id="36h-mH-x3G"/>
                         <segue destination="ctj-DN-BRG" kind="presentation" id="EdV-vb-kuU"/>
                     </connections>
                 </viewController>
@@ -125,22 +143,32 @@
                                 <rect key="frame" x="91" y="405" width="180" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="toResultButton:" destination="ctj-DN-BRG" eventType="touchUpInside" id="9fV-jA-IcT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQb-D8-exO">
                                 <rect key="frame" x="16" y="551" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ライブラリ"/>
+                                <connections>
+                                    <action selector="toLibraryButton:" destination="ctj-DN-BRG" eventType="touchUpInside" id="eH7-hj-Clr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5T-iT-QrM">
                                 <rect key="frame" x="252" y="551" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="カメラ"/>
+                                <connections>
+                                    <action selector="toCameraButton:" destination="ctj-DN-BRG" eventType="touchUpInside" id="66B-r7-KBl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z1p-cd-FGg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="nightFaceImageView" destination="Fy3-eG-swZ" id="zt0-EH-JBA"/>
                         <segue destination="uis-oy-uas" kind="presentation" id="YBJ-nX-LGC"/>
                     </connections>
                 </viewController>
@@ -174,16 +202,27 @@
                                 <rect key="frame" x="16" y="551" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="シェア"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="uis-oy-uas" eventType="touchUpInside" id="Km9-fd-qOA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMp-Fs-LLK">
                                 <rect key="frame" x="252" y="551" width="107" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="スクショ"/>
+                                <connections>
+                                    <action selector="screenShotButton:" destination="uis-oy-uas" eventType="touchUpInside" id="Aok-Nb-ztu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sRk-UK-oI9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="memotextField" destination="PyX-cU-D5k" id="B8G-rL-B15"/>
+                        <outlet property="morningImageOnTheLeft" destination="hWA-Ih-48x" id="2mH-aT-3cW"/>
+                        <outlet property="nightImageOnTheRight" destination="Lae-R2-9J1" id="y5h-iC-37K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u96-KC-eVS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
