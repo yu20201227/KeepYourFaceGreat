@@ -16,6 +16,6 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func pushedRegisterButton(_ sender: UIButton) {
+    @IBAction func didTapRegisterButton(_ sender: UIButton) {
     }
 }
