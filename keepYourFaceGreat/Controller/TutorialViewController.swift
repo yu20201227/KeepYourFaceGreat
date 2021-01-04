@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OpeningViewController: UIViewController {
+class TutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
