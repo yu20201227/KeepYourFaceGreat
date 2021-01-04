@@ -15,12 +15,12 @@ class MorningPhotoViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func morningDecideButton(_ sender: Any) {
+    @IBAction func morningDecideButton(_ sender: UIButton) {
     }
     
-    @IBAction func toCameraButton(_ sender: Any) {
+    @IBAction func toCameraButton(_ sender: UIButton) {
     }
     
-    @IBAction func toLibraryButton(_ sender: Any) {
+    @IBAction func toLibraryButton(_ sender: UIButton) {
     }
 }

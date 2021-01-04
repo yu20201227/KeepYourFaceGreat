@@ -17,9 +17,9 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction func backButton(_ sender: UIButton) {
     }
     
-    @IBAction func shareButton(_ sender: Any) {
+    @IBAction func shareButton(_ sender: UIButton) {
     }
 }

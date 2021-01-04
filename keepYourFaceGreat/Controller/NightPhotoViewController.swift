@@ -15,12 +15,12 @@ class NightPhotoViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func nightDecideButton(_ sender: Any) {
+    @IBAction func nightDecideButton(_ sender: UIButton) {
     }
     
-    @IBAction func toCameraAtNightButton(_ sender: Any) {
+    @IBAction func toCameraAtNightButton(_ sender: UIButton) {
     }
     
-    @IBAction func toLibraryAtNightButton(_ sender: Any) {
+    @IBAction func toLibraryAtNightButton(_ sender: UIButton) {
     }
 }
