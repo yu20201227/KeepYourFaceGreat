@@ -9,17 +9,13 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
-    
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var passTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func pushedRegisterButton(_ sender: Any) {
     }
-    
 }

@@ -9,12 +9,10 @@ import UIKit
 
 class MorningPhotoViewController: UIViewController {
     
-    
     @IBOutlet weak var morningImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func morningDecideButton(_ sender: Any) {
@@ -23,8 +21,6 @@ class MorningPhotoViewController: UIViewController {
     @IBAction func toCameraButton(_ sender: Any) {
     }
     
-    
     @IBAction func toLibraryButton(_ sender: Any) {
     }
-    
 }
