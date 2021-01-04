@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="103"/>
+            <point key="canvasLocation" x="-207" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="hT4-um-4ie">
             <objects>
-                <viewController id="qSs-98-zuN" sceneMemberID="viewController">
+                <viewController id="qSs-98-zuN" customClass="RegisterViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PDt-jI-Cud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,12 +36,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la6-tC-e1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="503" y="103"/>
+            <point key="canvasLocation" x="502" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Morning Photo View Controller-->
         <scene sceneID="hP5-1L-jUD">
             <objects>
-                <viewController id="etH-nS-JOi" sceneMemberID="viewController">
+                <viewController id="etH-nS-JOi" customClass="MorningPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipk-3X-5qa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="1236" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Night Photo View Controller-->
         <scene sceneID="OTy-o5-Lce">
             <objects>
-                <viewController id="vmF-FG-F06" sceneMemberID="viewController">
+                <viewController id="vmF-FG-F06" customClass="NightPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Nb-V9-nqq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1910" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="MSO-sm-Qo4">
             <objects>
-                <viewController id="fAM-gX-clc" sceneMemberID="viewController">
+                <viewController id="fAM-gX-clc" customClass="ResultViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0AG-rS-pv7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
