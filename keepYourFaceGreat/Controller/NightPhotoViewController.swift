@@ -9,7 +9,7 @@ import UIKit
 
 class NightPhotoViewController: UIViewController {
     
-    @IBOutlet weak var nightImageView: UIImageView!
+    @IBOutlet weak var nightPhotoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +18,9 @@ class NightPhotoViewController: UIViewController {
     @IBAction func didTapNightPhotoButton(_ sender: UIButton) {
     }
     
-    @IBAction func didTapAccessCameraAtNightButton(_ sender: UIButton) {
+    @IBAction func didTapAccessCamera(_ sender: UIButton) {
     }
     
-    @IBAction func didTapAccessLibraryAtNightButton(_ sender: UIButton) {
+    @IBAction func didTapAccessLibrary(_ sender: UIButton) {
     }
 }

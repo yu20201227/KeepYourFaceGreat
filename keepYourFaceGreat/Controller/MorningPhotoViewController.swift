@@ -9,7 +9,7 @@ import UIKit
 
 class MorningPhotoViewController: UIViewController {
     
-    @IBOutlet weak var morningImageView: UIImageView!
+    @IBOutlet weak var morningPhotoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
