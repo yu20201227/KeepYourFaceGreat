@@ -32,4 +32,7 @@ class NightPhotoViewController: UIViewController, UIImagePickerControllerDelegat
             
         }
     }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 }

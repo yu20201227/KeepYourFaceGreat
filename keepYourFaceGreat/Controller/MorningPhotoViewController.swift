@@ -31,4 +31,7 @@ class MorningPhotoViewController: UIViewController, UIImagePickerControllerDeleg
             self.present(UIImagePicker, animated: true, completion: nil)
         }
     }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
