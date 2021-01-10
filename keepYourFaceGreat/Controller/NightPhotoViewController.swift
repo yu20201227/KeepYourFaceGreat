@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NightPhotoViewController: UIViewController {
+class NightPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var nightPhotoImageView: UIImageView!
     
@@ -19,6 +19,15 @@ class NightPhotoViewController: UIViewController {
     }
     
     @IBAction func didTapAccessCamera(_ sender: UIButton) {
+        let UIImagePicker = UIImagePickerController()
+        UIImagePicker.sourceType = .camera
+        UIImagePicker.delegate = self
+        present(UIImagePicker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let nightImage = info[.originalImage] as! UIImage
+        UIImageWriteToSavedPhotosAlbum(nightImage, nil, nil, nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func didTapAccessLibrary(_ sender: UIButton) {
