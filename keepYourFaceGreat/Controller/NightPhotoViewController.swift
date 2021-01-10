@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NightPhotoViewController: UIViewController {
+class NightPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var nightPhotoImageView: UIImageView!
     
@@ -22,5 +22,14 @@ class NightPhotoViewController: UIViewController {
     }
     
     @IBAction func didTapAccessLibrary(_ sender: UIButton) {
+        let UIImagePicker = UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            UIImagePicker.sourceType = .photoLibrary
+            UIImagePicker.allowsEditing = true
+            UIImagePicker.delegate = self
+            self.present(UIImagePicker, animated: true, completion: nil)
+            
+        }
     }
 }

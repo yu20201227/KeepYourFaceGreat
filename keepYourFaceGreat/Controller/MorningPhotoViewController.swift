@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MorningPhotoViewController: UIViewController {
+class MorningPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var morningPhotoImageView: UIImageView!
     
@@ -22,5 +22,13 @@ class MorningPhotoViewController: UIViewController {
     }
     
     @IBAction func didTapAccessLibraryButton(_ sender: UIButton) {
+        let UIImagePicker = UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            UIImagePicker.sourceType = .photoLibrary
+            UIImagePicker.allowsEditing = true
+            UIImagePicker.delegate = self
+            self.present(UIImagePicker, animated: true, completion: nil)
+        }
     }
 }
