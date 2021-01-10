@@ -20,16 +20,23 @@ class NightPhotoViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBAction func didTapAccessCamera(_ sender: UIButton) {
         let UIImagePicker = UIImagePickerController()
-        UIImagePicker.sourceType = .camera
-        UIImagePicker.delegate = self
-        present(UIImagePicker, animated: true, completion: nil)
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            UIImagePicker.allowsEditing = true
+            UIImagePicker.sourceType = .camera
+            UIImagePicker.delegate = self
+            self.present(UIImagePicker, animated: true, completion: nil)
+        }
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let nightImage = info[.originalImage] as! UIImage
-        UIImageWriteToSavedPhotosAlbum(nightImage, nil, nil, nil)
-        self.dismiss(animated: true, completion: nil)
+        
+        if info[.originalImage] as? UIImage != nil {
+            let nightImage = info[.originalImage] as! UIImage
+            nightPhotoImageView.image = nightImage
+            UIImageWriteToSavedPhotosAlbum(nightImage, nil, nil, nil)
+            picker.dismiss(animated: true, completion: nil)
+        }
     }
-    
     @IBAction func didTapAccessLibrary(_ sender: UIButton) {
     }
 }
