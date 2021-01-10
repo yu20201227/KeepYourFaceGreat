@@ -21,6 +21,9 @@
                                 <rect key="frame" x="41" y="546" width="294" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="さあはじめよう！"/>
+                                <connections>
+                                    <action selector="didTapToRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaq-4k-7Ye"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
