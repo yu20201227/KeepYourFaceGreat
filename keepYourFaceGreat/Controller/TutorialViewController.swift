@@ -12,5 +12,7 @@ class TutorialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func didTapToRegisterButton(_ sender: Any) {
+    }
 }
 
