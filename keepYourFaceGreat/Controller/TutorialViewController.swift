@@ -13,6 +13,7 @@ class TutorialViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func didTapToRegisterButton(_ sender: Any) {
+        performSegue(withIdentifier: "toRegister", sender: nil)
     }
 }
 
