@@ -29,6 +29,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="C5d-o5-rp3" kind="presentation" identifier="toLogin" id="CjO-5h-kxe"/>
+                        <segue destination="qSs-98-zuN" kind="presentation" identifier="toRegister" id="5Qc-Pz-kiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,7 +41,7 @@
         <!--Login View Controller-->
         <scene sceneID="Tyv-Xt-fqQ">
             <objects>
-                <viewController id="C5d-o5-rp3" customClass="LoginViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="C5d-o5-rp3" customClass="LoginViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqa-N8-Xjj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,16 +75,17 @@
                     <connections>
                         <outlet property="loginEmailTextField" destination="AQw-Xc-T2f" id="zJD-hN-hNF"/>
                         <outlet property="loginPassTextField" destination="rHn-gt-xqJ" id="6FC-z0-4vc"/>
+                        <segue destination="etH-nS-JOi" kind="presentation" identifier="toMorning" id="PD1-pz-QWE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9XM-nA-t4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92" y="-593"/>
+            <point key="canvasLocation" x="-94" y="-99"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="hT4-um-4ie">
             <objects>
-                <viewController id="qSs-98-zuN" customClass="RegisterViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="qSs-98-zuN" customClass="RegisterViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PDt-jI-Cud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,16 +118,17 @@
                     <connections>
                         <outlet property="nameTextField" destination="8fu-mo-yfa" id="aTB-ep-1Xy"/>
                         <outlet property="passTextField" destination="pQ7-7l-nWd" id="pke-UR-NX0"/>
+                        <segue destination="etH-nS-JOi" kind="presentation" identifier="toMorning" id="R2l-RM-5SI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la6-tC-e1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="569"/>
+            <point key="canvasLocation" x="-95" y="572"/>
         </scene>
         <!--Morning Photo View Controller-->
         <scene sceneID="hP5-1L-jUD">
             <objects>
-                <viewController id="etH-nS-JOi" customClass="MorningPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="etH-nS-JOi" customClass="MorningPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipk-3X-5qa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,16 +167,17 @@
                     </view>
                     <connections>
                         <outlet property="morningImageView" destination="B8S-Rd-mlZ" id="SVk-E6-VEl"/>
+                        <segue destination="vmF-FG-F06" kind="presentation" identifier="toNight" id="gvi-2Y-gae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clj-vD-nl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="87.706146926536732"/>
+            <point key="canvasLocation" x="900" y="88"/>
         </scene>
         <!--Night Photo View Controller-->
         <scene sceneID="OTy-o5-Lce">
             <objects>
-                <viewController id="vmF-FG-F06" customClass="NightPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vmF-FG-F06" customClass="NightPhotoViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Nb-V9-nqq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +216,7 @@
                     </view>
                     <connections>
                         <outlet property="nightImageView" destination="0UQ-uU-yYy" id="8El-OH-nq6"/>
+                        <segue destination="fAM-gX-clc" kind="presentation" identifier="toResult" id="SYb-Cs-hrV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfj-N9-CZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -218,7 +226,7 @@
         <!--Result View Controller-->
         <scene sceneID="MSO-sm-Qo4">
             <objects>
-                <viewController id="fAM-gX-clc" customClass="ResultViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fAM-gX-clc" customClass="ResultViewController" customModule="keepYourFaceGreat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0AG-rS-pv7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,6 +276,9 @@
             <point key="canvasLocation" x="2624.8000000000002" y="87.706146926536732"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="R2l-RM-5SI"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
