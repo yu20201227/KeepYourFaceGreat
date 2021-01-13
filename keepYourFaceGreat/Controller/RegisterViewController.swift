@@ -49,6 +49,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             }
         }
     //ログイン画面への移行ボタン(別コミット)
+    @IBAction func didTapAccessToLogin(_ sender: UIButton) {
+        performSegue(withIdentifier: "toLogin", sender: nil)
+    }
     
     func alert(title:String, message:String, actiontitle:String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
