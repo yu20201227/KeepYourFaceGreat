@@ -14,6 +14,7 @@
 		EB73EE73257D02B400DC86AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73EE71257D02B400DC86AE /* Main.storyboard */; };
 		EB73EE75257D02B500DC86AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB73EE74257D02B500DC86AE /* Assets.xcassets */; };
 		EB73EE78257D02B500DC86AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73EE76257D02B500DC86AE /* LaunchScreen.storyboard */; };
+		EB7E0DC925AEBE99008BBE26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7E0DC825AEBE99008BBE26 /* GoogleService-Info.plist */; };
 		EBED96A225A2AF79007086CD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED96A125A2AF79007086CD /* RegisterViewController.swift */; };
 		EBED96A525A2AF8C007086CD /* MorningPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED96A425A2AF8C007086CD /* MorningPhotoViewController.swift */; };
 		EBED96A825A2AFA1007086CD /* NightPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED96A725A2AFA1007086CD /* NightPhotoViewController.swift */; };
@@ -32,6 +33,7 @@
 		EB73EE74257D02B500DC86AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB73EE77257D02B500DC86AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB73EE79257D02B500DC86AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7E0DC825AEBE99008BBE26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBED96A125A2AF79007086CD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EBED96A425A2AF8C007086CD /* MorningPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningPhotoViewController.swift; sourceTree = "<group>"; };
 		EBED96A725A2AFA1007086CD /* NightPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightPhotoViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				EB72E3272581DB2000658939 /* Controller */,
 				EB72E3262581DB1A00658939 /* View */,
 				EB73EE79257D02B500DC86AE /* Info.plist */,
+				EB7E0DC825AEBE99008BBE26 /* GoogleService-Info.plist */,
 			);
 			path = keepYourFaceGreat;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB73EE78257D02B500DC86AE /* LaunchScreen.storyboard in Resources */,
+				EB7E0DC925AEBE99008BBE26 /* GoogleService-Info.plist in Resources */,
 				EB73EE75257D02B500DC86AE /* Assets.xcassets in Resources */,
 				EB73EE73257D02B400DC86AE /* Main.storyboard in Resources */,
 			);

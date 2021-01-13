@@ -63,6 +63,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK1-XH-FjZ">
+                                <rect key="frame" x="93" y="521" width="188" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="ログイン画面へ"/>
+                                <connections>
+                                    <action selector="didTapAccessToLogin:" destination="qSs-98-zuN" eventType="touchUpInside" id="3d3-WY-dyo"/>
+                                    <action selector="pushedRegisterButton:" destination="qSs-98-zuN" eventType="touchUpInside" id="vt7-Um-aJg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nby-Lu-KT1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
