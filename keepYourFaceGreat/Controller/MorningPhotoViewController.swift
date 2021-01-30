@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class MorningPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-
+    
     
     @IBOutlet weak var morningPhotoImageView: UIImageView!
     
@@ -17,6 +18,7 @@ class MorningPhotoViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func didTapMorningPhotoButton(_ sender: UIButton) {
+        uploadImageToFireStore()
     }
     
     @IBAction func didTapAccessCameraButton(_ sender: UIButton) {
@@ -51,5 +53,21 @@ class MorningPhotoViewController: UIViewController, UIImagePickerControllerDeleg
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func uploadImageToFireStore(){
+        let storage = Storage.storage().reference(forURL: "gs://keepyourfacegreat.appspot.com")
+        let imageRef = storage.child("morningPhotoImage").child("\(morningPhotoImageView.image).jpeg")
+        var morningPhotoImageData:Data = Data()
+        
+        if morningPhotoImageView.image != nil {
+            morningPhotoImageData = (morningPhotoImageView.image?.jpegData(compressionQuality: 0.01))!
+        }
+        imageRef.putData(morningPhotoImageData, metadata: nil) { (metaData, error) in
+            if error != nil {
+                print(error.debugDescription)
+                return
+            }
+        }
     }
 }
